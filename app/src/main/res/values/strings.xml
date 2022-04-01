@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SilverHelper</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="main_page_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="main_setting">设置</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">您好，今天您想做什么？</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
