@@ -48,7 +48,7 @@
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="26sp"
-                app:iconPadding="4dp" />
+                app:iconPadding="4dp"/>
             <!--            <Button-->
             <!--                android:id="@+id/button_first"-->
             <!--                android:layout_width="wrap_content"-->
@@ -61,6 +61,102 @@
             <!--                android:textSize="18sp"-->
             <!--                app:iconPadding="4dp" />-->
         </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/main_section_background">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_main_doctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="7.5dp"
+                    android:layout_weight="1"
+                    android:height="100dp"
+                    android:background="@drawable/main_btn_doctor"
+                    android:drawableStart="@drawable/ic_user_doctor_solid"
+                    android:includeFontPadding="false"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/main_doctor"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_main_shopping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7.5dp"
+                    android:layout_weight="1"
+                    android:height="100dp"
+                    android:background="@drawable/main_btn_shopping"
+                    android:drawableStart="@drawable/ic_basket_shopping_solid"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/main_shopping"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="8dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_main_children"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="7.5dp"
+                    android:layout_weight="1"
+                    android:height="100dp"
+                    android:background="@drawable/main_btn_family"
+                    android:drawableStart="@drawable/ic_people_roof_solid"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/main_family"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_main_transport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7.5dp"
+                    android:layout_weight="1"
+                    android:height="100dp"
+                    android:background="@drawable/main_btn_transport"
+                    android:drawableStart="@drawable/ic_bus_solid"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/main_transport"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+            </TableRow>
+
+        </TableLayout>
 
     </LinearLayout>
 
