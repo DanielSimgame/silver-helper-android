@@ -4,8 +4,13 @@
     <!-- Strings used for fragments for navigation -->
     <string name="main_page_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
+    <!-- Strings used for the main page -->
     <string name="main_setting">设置</string>
-    <string name="previous">Previous</string>
+    <string name="main_doctor">看病</string>
+    <string name="main_shopping">买菜</string>
+    <string name="main_family">亲人</string>
+    <string name="main_transport">出行</string>
+    <string name="previous">返回</string>
 
     <string name="hello_first_fragment">您好，今天您想做什么？</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>

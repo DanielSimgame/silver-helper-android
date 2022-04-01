@@ -6,6 +6,16 @@
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/default_btn.xml" value="0.193" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/default_btn_background.xml" value="0.193" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/gradual_color_bg.xml" value="0.204" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/ic_basket_shopping_solid.xml" value="0.169" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/ic_bus_solid.xml" value="0.169" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/ic_people_roof_solid.xml" value="0.169" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/ic_user_doctor_solid.xml" value="0.169" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/main_btn_doctor.xml" value="0.191" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/main_btn_family.xml" value="0.191" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/main_btn_shopping.xml" value="0.191" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/main_btn_transport.xml" value="0.191" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/main_section_background.xml" value="0.191" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout-v23/fragment_first.xml" value="0.1" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout/activity_main.xml" value="0.17401215805471124" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout/content_main.xml" value="0.3619791666666667" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout/fragment_first.xml" value="0.33" />
@@ -18,5 +28,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>
