@@ -22,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:layout_marginBottom="12dp"
             android:orientation="horizontal">
 
             <TextView
@@ -73,26 +74,24 @@
                 <TableLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
                     android:background="@drawable/main_section_background">
 
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:paddingStart="12dp"
-                        android:paddingTop="10dp"
-                        android:paddingEnd="12dp"
-                        android:paddingBottom="5dp">
+                        android:paddingTop="5dp"
+                        android:paddingEnd="12dp">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <com.google.android.material.button.MaterialButton
                             android:id="@+id/button_main_doctor"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="7.5dp"
+                            android:layout_marginEnd="8dp"
                             android:layout_weight="1"
                             android:height="100dp"
-                            android:background="@drawable/main_btn_doctor_and_emergency"
-                            android:drawableStart="@drawable/ic_user_doctor_solid"
+                            android:backgroundTint="@color/main_emergency"
+                            app:icon="@drawable/ic_user_doctor_solid"
                             android:includeFontPadding="false"
                             android:paddingStart="15dp"
                             android:paddingEnd="0dp"
@@ -100,68 +99,75 @@
                             android:textColor="@color/white"
                             android:textColorHint="@color/white"
                             android:textSize="30sp"
+                            app:cornerRadius="15dp"
                             android:textStyle="bold" />
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <com.google.android.material.button.MaterialButton
                             android:id="@+id/button_main_shopping"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="7.5dp"
+                            android:layout_marginStart="8dp"
                             android:layout_weight="1"
                             android:height="100dp"
-                            android:background="@drawable/main_btn_shopping"
-                            android:drawableStart="@drawable/ic_basket_shopping_solid"
+                            android:backgroundTint="@color/main_shopping"
+                            android:includeFontPadding="false"
                             android:paddingStart="15dp"
                             android:paddingEnd="0dp"
                             android:text="@string/main_shopping"
                             android:textColor="@color/white"
                             android:textColorHint="@color/white"
                             android:textSize="30sp"
-                            android:textStyle="bold" />
+                            app:cornerRadius="15dp"
+                            android:textStyle="bold"
+                            app:icon="@drawable/ic_basket_shopping_solid" />
+
                     </TableRow>
 
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:paddingStart="12dp"
-                        android:paddingTop="5dp"
                         android:paddingEnd="12dp"
-                        android:paddingBottom="10dp">
+                        android:paddingBottom="5dp">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <com.google.android.material.button.MaterialButton
                             android:id="@+id/button_main_children"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="7.5dp"
+                            android:layout_marginEnd="8dp"
                             android:layout_weight="1"
                             android:height="100dp"
-                            android:background="@drawable/main_btn_family"
-                            android:drawableStart="@drawable/ic_phone_solid"
+                            android:backgroundTint="@color/main_family"
+                            app:icon="@drawable/ic_phone_solid"
+                            android:includeFontPadding="false"
                             android:paddingStart="15dp"
                             android:paddingEnd="0dp"
                             android:text="@string/main_family"
                             android:textColor="@color/white"
                             android:textColorHint="@color/white"
                             android:textSize="30sp"
+                            app:cornerRadius="15dp"
                             android:textStyle="bold" />
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <com.google.android.material.button.MaterialButton
                             android:id="@+id/button_main_transport"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="7.5dp"
+                            android:layout_marginStart="8dp"
                             android:layout_weight="1"
                             android:height="100dp"
-                            android:background="@drawable/main_btn_transport"
-                            android:drawableStart="@drawable/ic_bus_solid"
+                            android:backgroundTint="@color/main_transport"
+                            android:includeFontPadding="false"
                             android:paddingStart="15dp"
                             android:paddingEnd="0dp"
                             android:text="@string/main_transport"
                             android:textColor="@color/white"
                             android:textColorHint="@color/white"
                             android:textSize="30sp"
+                            app:cornerRadius="15dp"
                             android:textStyle="bold"
-                            tools:ignore="TextContrastCheck" />
+                            app:icon="@drawable/ic_bus_solid" />
+
                     </TableRow>
 
                 </TableLayout>
@@ -248,7 +254,7 @@
                             android:textColor="@color/white"
                             android:textColorHint="@color/white"
                             android:textSize="30sp"
-                            app:backgroundTint="@color/emergency_bg"
+                            app:backgroundTint="@color/main_emergency"
                             app:cornerRadius="15dp"
                             app:icon="@drawable/ic_alarm"
                             app:iconGravity="textTop"
@@ -282,29 +288,83 @@
 
                     </TableRow>
 
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingStart="12dp"
+                        android:paddingTop="0dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="5dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/button_main_anti_fraud"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/placeholder_anti_fraud"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="30sp"
+                            app:backgroundTint="@color/white"
+                            app:cornerRadius="15dp"
+                            app:icon="@drawable/ic_shield_solid"
+                            app:iconGravity="textTop"
+                            app:iconPadding="2dp"
+                            app:iconTint="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:strokeColor="#FF000000"
+                            app:strokeWidth="1dp" />
+                    </TableRow>
+
                 </TableLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/main_section_background"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:layout_marginTop="12dp"
                     android:paddingStart="12dp"
                     android:paddingTop="10dp"
                     android:paddingEnd="12dp"
-                    android:paddingBottom="10dp"
-                    android:background="@drawable/main_section_background">
+                    android:paddingBottom="10dp">
 
                     <TextView
-                        android:id="@+id/textView"
+                        android:id="@+id/textView_pandemic_info"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/placeholder_pandemic_info"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="32sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/main_section_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView_videos_recommendation"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/placeholder_videos_recommendation"
-                        android:textSize="32sp"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/black"/>
+                        android:textColorHint="@color/black"
+                        android:textSize="32sp" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
