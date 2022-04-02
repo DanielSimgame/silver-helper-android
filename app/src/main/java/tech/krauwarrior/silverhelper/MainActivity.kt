@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initView() {
         binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own actionasd", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "语音操作预留按钮", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
     }
