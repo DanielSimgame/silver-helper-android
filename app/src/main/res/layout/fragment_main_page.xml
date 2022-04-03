@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    tools:context=".MainPageFragment">
 
 
     <LinearLayout
@@ -35,31 +35,40 @@
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
-            <androidx.appcompat.widget.AppCompatButton
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/button_main_settings"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/default_btn_background"-->
+<!--                android:drawableStart="@drawable/ic_wrench_solid"-->
+<!--                android:paddingStart="10dp"-->
+<!--                android:paddingEnd="4dp"-->
+<!--                android:text="@string/title_setting"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textColorHint="@color/black"-->
+<!--                android:textSize="26sp"-->
+<!--                app:iconPadding="4dp" />-->
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/button_main_settings"
-                android:layout_width="0dip"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/default_btn_background"
-                android:drawableStart="@drawable/ic_wrench_solid"
-                android:paddingStart="10dp"
-                android:paddingEnd="4dp"
-                android:text="@string/main_setting"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
+                android:layout_gravity="top"
+                android:text="@string/title_setting"
                 android:textSize="26sp"
-                app:iconPadding="4dp" />
-            <!--            <Button-->
-            <!--                android:id="@+id/button_first"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:background="@color/white"-->
-            <!--                android:paddingLeft="4dp"-->
-            <!--                android:paddingRight="4dp"-->
-            <!--                android:text="@string/main_setting"-->
-            <!--                android:textColor="@color/black"-->
-            <!--                android:textSize="18sp"-->
-            <!--                app:iconPadding="4dp" />-->
+                android:maxHeight="60dp"
+                android:minHeight="55dp"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/ic_wrench_solid"
+                app:iconTint="@color/black"
+                app:strokeColor="#FF000000"
+                app:iconPadding="4dp"
+                app:strokeWidth="0.5dp"/>
+
         </LinearLayout>
 
         <ScrollView

@@ -4,8 +4,10 @@
     <!-- Strings used for fragments for navigation -->
     <string name="main_page_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="title_setting">设置</string>
+
     <!-- Strings used for the main page -->
-    <string name="main_setting">设置</string>
     <string name="main_doctor">看病</string>
     <string name="main_shopping">买菜</string>
     <string name="main_family">亲人</string>
@@ -19,8 +21,16 @@
     <string name="placeholder_anti_fraud">国家反诈中心APP</string>
     <string name="fab_description">语音按钮</string>
 
-    <!-- Strings used for the second page -->
+    <!-- Strings used for the settings page -->
     <string name="previous">返回</string>
+    <string name="settings_community">社区信息设置</string>
+    <string name="settings_family">亲人信息设置</string>
+    <string name="settings_address">默认地址设置</string>
+    <string name="settings_security">账号安全设置</string>
+    <string name="settings_services">联系客服</string>
+    <string name="settings_about">关于软件</string>
+    <string name="settings_delete_account">注销账号</string>
+    <string name="settings_logout">退出登录</string>
 
     <string name="hello_first_fragment">您好，今天您想做什么？</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
