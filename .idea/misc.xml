@@ -3,6 +3,39 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/bj_110.xml" value="0.16" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/default_btn_background.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/gradual_color_bg.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/ic_alarm.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/ic_basket_shopping_solid.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/ic_bus_solid.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/ic_circle_arrow_left_solid.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/ic_microphone_solid.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/ic_people_roof_solid.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/ic_person_cane_solid.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/ic_phone_solid.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/ic_qrcode_solid.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/ic_shield_solid.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/ic_wrench_solid.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/ic_yuan_sign_solid.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/main_btn_call_nurse.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/main_btn_doctor_and_emergency.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/main_btn_family.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/main_btn_shopping.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/main_btn_transport.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/main_section_background.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/drawable/settings_background.xml" value="0.1145" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/activity_main.xml" value="0.20108695652173914" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/baojing.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/chuxing.xml" value="0.136" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/content_main.xml" value="0.22871376811594202" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/fragment_main_page.xml" value="0.12310030395136778" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/fragment_settings.xml" value="0.11197916666666667" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/sdjh.xml" value="0.253125" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/menu/menu_main.xml" value="0.253125" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/default_btn.xml" value="0.193" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/default_btn_background.xml" value="0.193" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/gradual_color_bg.xml" value="0.204" />

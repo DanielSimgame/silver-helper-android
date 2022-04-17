@@ -31,6 +31,18 @@
     <string name="settings_about">关于软件</string>
     <string name="settings_delete_account">注销账号</string>
     <string name="settings_logout">退出登录</string>
+    <!-- 报警 -->
+    <string name="settings_firstAid">120急救</string>
+    <string name="settings_police">110公安</string>
+    <string name="settings_firemen">119消防</string>
+    <string name="settings_trafficPolice">122交警</string>
+    <string name="settings_hint">提示：\n报警将采用反触法的方式拨打，即按下报警后3秒内没有取消就会拨打对应的报警电话。\n\n在您报警的同时我们将会发送警报到您的子女的手机上。</string>
+
+    <!-- 出行 -->
+    <string name="settings_start">起点</string>
+    <string name="settings_final">终点</string>
+    <string name="settings_taxi">打车</string>
+    <string name="settings_bus">公交车</string>
 
     <string name="hello_first_fragment">您好，今天您想做什么？</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
