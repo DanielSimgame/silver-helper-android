@@ -40,9 +40,18 @@
 
     <!-- 出行 -->
     <string name="settings_start">起点</string>
+    <string name="settings_start_1">南李路武昌首义学院</string>
     <string name="settings_final">终点</string>
+    <string name="settings_final_1">东湖</string>
     <string name="settings_taxi">打车</string>
     <string name="settings_bus">公交车</string>
+    <string name="settings_park">附近公园</string>
+    <string name="settings_park_1">(滑动卡片)</string>
+    <string name="settings_park_type">紫阳公园</string>
+    <string name="settings_park_site">武昌区张之洞路</string>
+    <string name="settings_park_level">星级</string>
+    <string name="settings_go">去这里</string>
+
 
     <string name="hello_first_fragment">您好，今天您想做什么？</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
