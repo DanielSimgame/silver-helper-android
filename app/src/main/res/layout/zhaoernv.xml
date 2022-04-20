@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPageFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearlayout_main_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="2"
+                android:text="找儿女"
+                android:textColor="@color/white"
+                android:textSize="96sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_section_background">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="5dp">
+
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/nv" />
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:background="@drawable/main_section_background">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_weight="2"
+                                    android:text="女儿"
+                                    android:textColor="@color/black"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:paddingBottom="5dp">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/button_main_transport1"
+                                    android:layout_width="150dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_weight="1"
+                                    android:height="150dp"
+                                    android:backgroundTint="@color/main_family"
+                                    android:includeFontPadding="false"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="打电话"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/white"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold"
+                                    app:cornerRadius="15dp" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="5dp">
+
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/er" />
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/main_section_background">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_weight="2"
+                                    android:text="儿子"
+                                    android:textColor="@color/black"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:paddingBottom="5dp">
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/button_main_transport"
+                                    android:layout_width="150dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_weight="1"
+                                    android:height="150dp"
+                                    android:backgroundTint="@color/main_family"
+                                    android:includeFontPadding="false"
+                                    android:paddingStart="0dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="打电话"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/white"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold"
+                                    app:cornerRadius="15dp" />
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+                </TableLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
