@@ -1,28 +1,42 @@
 package tech.krauwarrior.silverhelper
 
-import android.graphics.Canvas
+import android.annotation.SuppressLint
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
+import com.google.android.material.snackbar.Snackbar
 import tech.krauwarrior.silverhelper.databinding.ActivityMainBinding
+import tech.krauwarrior.silverhelper.helpers.HCountDown
+import tech.krauwarrior.silverhelper.helpers.HReverseTriggerDialog
+import tech.krauwarrior.silverhelper.helpers.VCountDown
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), HCountDown.onCountDownListener {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
-    
 
+    private val DURATION = 3000L
+    private val INTERVAL = 1000L
+
+    private lateinit var viewCountDown: VCountDown
+    private lateinit var hReverseTriggerDialog: HReverseTriggerDialog
+    private lateinit var hCountDown: HCountDown
+
+    @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        viewCountDown = findViewById(R.layout.dialog_reverse_trigger)
+        hCountDown = HCountDown(DURATION, INTERVAL, this)
 
         setSupportActionBar(binding.toolbar)
 
@@ -31,6 +45,15 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         initView()
+    }
+
+    fun startCountDown(view: View?) {
+        hCountDown.startCountDown()
+    }
+
+    fun startDialogCountDown(view: View?) {
+        hReverseTriggerDialog = HReverseTriggerDialog(this)
+        hReverseTriggerDialog.show()
     }
 
     private fun initView() {
@@ -60,5 +83,16 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
+    }
+
+    override fun onTick(millisUntilFinished: Long) {
+        viewCountDown.setProgress(
+            DURATION / INTERVAL,
+            (millisUntilFinished.toDouble() / DURATION * (DURATION / INTERVAL)).toLong()
+        )
+    }
+
+    override fun onFinish() {
+        viewCountDown.setProgress(DURATION / INTERVAL, 0)
     }
 }

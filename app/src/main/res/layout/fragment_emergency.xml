@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPageFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearlayout_main_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="2"
+                android:text="@string/main_emergency_call"
+                android:textSize="72sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_section_background">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="12dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="12dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_emergency_120"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:height="150dp"
+                        android:backgroundTint="@color/main_emergency"
+                        android:includeFontPadding="false"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/settings_firstAid"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="15dp"
+                        app:icon="@drawable/ic_alarm"
+                        app:iconGravity="textTop"
+                        app:iconPadding="2dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_emergency_110"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:height="150dp"
+                        android:backgroundTint="@color/main_family"
+                        android:includeFontPadding="false"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/settings_police"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="15dp"
+                        app:icon="@drawable/ic_alarm"
+                        app:iconGravity="textTop"
+                        app:iconPadding="2dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="12dp"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="12dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_emergency_119"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:height="150dp"
+                        android:backgroundTint="@color/main_transport"
+                        android:includeFontPadding="false"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/settings_firemen"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="15dp"
+                        app:icon="@drawable/ic_alarm"
+                        app:iconGravity="textTop"
+                        app:iconPadding="2dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_emergency_112"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:height="150dp"
+                        android:backgroundTint="@color/main_shopping"
+                        android:includeFontPadding="false"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/settings_trafficPolice"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="15dp"
+                        app:icon="@drawable/ic_alarm"
+                        app:iconGravity="textTop"
+                        app:iconPadding="2dp" />
+
+                </TableRow>
+
+<!--                <TableRow-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="12dp"-->
+<!--                    android:paddingEnd="12dp"-->
+<!--                    android:paddingBottom="5dp">-->
+
+<!--                    <com.google.android.material.button.MaterialButton-->
+<!--                        android:id="@+id/button_main_children"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginEnd="8dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:height="150dp"-->
+<!--                        android:backgroundTint="@color/main_transport"-->
+<!--                        android:includeFontPadding="false"-->
+<!--                        android:paddingStart="0dp"-->
+<!--                        android:paddingEnd="0dp"-->
+<!--                        android:text="@string/settings_firemen"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textColorHint="@color/white"-->
+<!--                        android:textSize="30sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        app:cornerRadius="15dp"-->
+<!--                        app:icon="@drawable/ic_alarm"-->
+<!--                        app:iconGravity="textTop"-->
+<!--                        app:iconPadding="2dp" />-->
+
+<!--                    <com.google.android.material.button.MaterialButton-->
+<!--                        android:id="@+id/button_main_transport"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="8dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:height="150dp"-->
+<!--                        android:backgroundTint="@color/main_shopping"-->
+<!--                        android:includeFontPadding="false"-->
+<!--                        android:paddingStart="0dp"-->
+<!--                        android:paddingEnd="0dp"-->
+<!--                        android:text="@string/settings_trafficPolice"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textColorHint="@color/white"-->
+<!--                        android:textSize="30sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        app:cornerRadius="15dp"-->
+<!--                        app:icon="@drawable/ic_car_burst_solid"-->
+<!--                        app:iconGravity="textTop"-->
+<!--                        app:iconPadding="2dp" />-->
+
+<!--                </TableRow>-->
+
+            </TableLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/main_section_background"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="10dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView_videos_recommendation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_hint"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="30sp" />
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

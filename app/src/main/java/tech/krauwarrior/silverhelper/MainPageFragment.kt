@@ -30,10 +30,17 @@ class MainPageFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        // 在此处绑定按钮点击事件
         super.onViewCreated(view, savedInstanceState)
 
+        // 设置按钮
         binding.buttonMainSettings.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+        }
+
+        // Emergency Button / 报警按钮
+        binding.buttonMainEmergencyCall.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_emergencyFragment)
         }
     }
 

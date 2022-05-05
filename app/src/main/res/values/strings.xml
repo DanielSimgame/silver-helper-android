@@ -36,7 +36,7 @@
     <string name="settings_police">110公安</string>
     <string name="settings_firemen">119消防</string>
     <string name="settings_trafficPolice">122交警</string>
-    <string name="settings_hint">提示：\n报警将采用反触法的方式拨打，即按下报警后3秒内没有取消就会拨打对应的报警电话。\n\n在您报警的同时我们将会发送警报到您的子女的手机上。</string>
+    <string name="settings_hint">在您报警的同时我们将会发送警报到您的家人的手机上。\n\n提示：\n报警将采用反触发的方式拨打，即按下报警后3秒内没有取消就会拨打对应的报警电话。</string>
 
     <!-- 出行 -->
     <string name="settings_start">起点</string>

@@ -15,4 +15,5 @@
     <color name="main_family">#FF007ea7</color>
     <color name="main_emergency">#FFE63946</color>
     <color name="main_transport">#FFe0b340</color>
+    <color name="black_333333">#FF333333</color>
 </resources>
