@@ -20,6 +20,11 @@ class MedicalFragment : Fragment() {
     private lateinit var hPermission: HPermission
     private lateinit var alertDialog: AlertDialog.Builder
 
+    /**
+     * Call the phone number
+     * @author Changming Mo
+     * @param phoneNumber The phone number to call
+     * */
     private fun makeDial(phoneNumber: String) {
         val intent = Intent()
         intent.action = Intent.ACTION_DIAL
@@ -28,11 +33,11 @@ class MedicalFragment : Fragment() {
     }
 
     /**
+     * Generate a TextView dynamically, with the given text.
      * @author Changming Mo
      * @since 2022-05-08
      * @param text The text to be displayed
      * @return View A TextView to be appended
-     * @description Generate a TextView dynamically, with the given text.
      * */
     fun makeTextView(text: String): View? {
         val textView = TextView(requireContext())

@@ -1,14 +1,20 @@
 package tech.krauwarrior.silverhelper
 
+import android.app.Activity
+import android.app.AlertDialog
+import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebView
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import tech.krauwarrior.silverhelper.databinding.FragmentMainPageBinding
+import tech.krauwarrior.silverhelper.helpers.HAppCaller
+
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -16,6 +22,7 @@ import tech.krauwarrior.silverhelper.databinding.FragmentMainPageBinding
 class MainPageFragment : Fragment() {
 
     private var _binding: FragmentMainPageBinding? = null
+    private lateinit var hAppCaller: HAppCaller
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -27,6 +34,8 @@ class MainPageFragment : Fragment() {
     ): View? {
 
         _binding = FragmentMainPageBinding.inflate(inflater, container, false)
+
+        hAppCaller = HAppCaller()
         return binding.root
 
     }
@@ -59,6 +68,11 @@ class MainPageFragment : Fragment() {
         binding.buttonMainHealthQrcode.setOnClickListener {
             openHealthCode()
         }
+
+        // Payment Code / 付款码
+        binding.buttonMainPaymentQrcode.setOnClickListener {
+            openPaymentCode()
+        }
     }
 
     override fun onDestroyView() {
@@ -66,10 +80,21 @@ class MainPageFragment : Fragment() {
         _binding = null
     }
 
-    fun openHealthCode () {
+    private fun openHealthCode () {
         val intent = Intent()
         intent.action = Intent.ACTION_VIEW
         intent.data = Uri.parse("https://ur.alipay.com/3pBRbxfnGJKk2TlogSuZJq")
         startActivity(intent)
+    }
+
+    private fun openPaymentCode () {
+//        val apkName = "com.alipay.mobile.nebula"
+        val apkName = "com.eg.android.AlipayGphone"
+        val isAlipayExist = hAppCaller.isApkInstalled(requireContext(), apkName)
+        if (isAlipayExist) {
+            hAppCaller.callAppDirectly(requireContext(), apkName)
+        } else {
+            hAppCaller.launchAppDetail(requireContext(), apkName, apkName)
+        }
     }
 }
