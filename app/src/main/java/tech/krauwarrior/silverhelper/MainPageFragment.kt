@@ -1,5 +1,7 @@
 package tech.krauwarrior.silverhelper
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -52,10 +54,22 @@ class MainPageFragment : Fragment() {
         binding.buttonMainTransport.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_transportFragment)
         }
+
+        // Health Code / 健康码
+        binding.buttonMainHealthQrcode.setOnClickListener {
+            openHealthCode()
+        }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    fun openHealthCode () {
+        val intent = Intent()
+        intent.action = Intent.ACTION_VIEW
+        intent.data = Uri.parse("https://ur.alipay.com/3pBRbxfnGJKk2TlogSuZJq")
+        startActivity(intent)
     }
 }

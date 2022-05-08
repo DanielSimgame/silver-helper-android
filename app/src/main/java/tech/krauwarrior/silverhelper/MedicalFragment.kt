@@ -21,19 +21,10 @@ class MedicalFragment : Fragment() {
     private lateinit var alertDialog: AlertDialog.Builder
 
     private fun makeDial(phoneNumber: String) {
-        if (hPermission.checkPermission(requireContext(), HPermission.PERMISSION_CALL_PHONE)) {
-            val intent = Intent()
-            intent.action = Intent.ACTION_DIAL
-            intent.data = Uri.parse("tel:$phoneNumber")
-            startActivity(intent)
-        } else {
-            hPermission.requestPermission(
-                requireActivity(),
-                HPermission.PERMISSION_CALL_PHONE,
-                HPermission.Request_CALL_PHONE
-            )
-            makeDial(phoneNumber)
-        }
+        val intent = Intent()
+        intent.action = Intent.ACTION_DIAL
+        intent.data = Uri.parse("tel:$phoneNumber")
+        startActivity(intent)
     }
 
     /**
