@@ -21,10 +21,15 @@
             android:id="@+id/action_FirstFragment_to_emergencyFragment"
             app:destination="@id/emergencyFragment"
             app:enterAnim="@anim/in_from_right"
-            app:exitAnim="@anim/nav_default_exit_anim" />
+            app:exitAnim="@anim/nav_default_exit_anim"/>
         <action
             android:id="@+id/action_FirstFragment_to_medicalFragment"
             app:destination="@id/medicalFragment"
+            app:enterAnim="@anim/in_from_right"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_FirstFragment_to_transportFragment"
+            app:destination="@id/transportFragment"
             app:enterAnim="@anim/in_from_right"
             app:exitAnim="@anim/nav_default_exit_anim"/>
     </fragment>
@@ -56,6 +61,16 @@
         android:label="MedicalFragment" >
         <action
             android:id="@+id/action_medicalFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/in_from_right"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/transportFragment"
+        android:name="tech.krauwarrior.silverhelper.TransportFragment"
+        android:label="TransportFragment" >
+        <action
+            android:id="@+id/action_transportFragment_to_FirstFragment"
             app:destination="@id/FirstFragment"
             app:enterAnim="@anim/in_from_right"
             app:exitAnim="@anim/nav_default_exit_anim"/>

@@ -47,6 +47,11 @@ class MainPageFragment : Fragment() {
         binding.buttonMainDoctor.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_medicalFragment)
         }
+
+        // Transport Button / 出行按钮
+        binding.buttonMainTransport.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_transportFragment)
+        }
     }
 
     override fun onDestroyView() {
