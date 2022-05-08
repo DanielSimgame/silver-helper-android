@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainPageFragment">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,288 +16,209 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:id="@+id/linearlayout_main_top_title"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginBottom="12dp"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_weight="2"
-                android:text="@string/main_transport"
-                android:textSize="72sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-        </LinearLayout>
+            android:text="@string/main_transport"
+            android:textColor="@color/white"
+            android:textSize="72sp"
+            android:textStyle="bold" />
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/section_half_transparent_white"
+            android:padding="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TableLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/main_section_background">
+                    android:orientation="vertical">
 
-                    <TableRow
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:paddingStart="12dp"-->
+<!--                        android:paddingTop="5dp"-->
+<!--                        android:paddingEnd="12dp">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:text="@string/settings_start"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="35sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/editTextTextPersonNae"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@color/white"-->
+<!--                            android:ems="10"-->
+<!--                            android:inputType="textPersonName"-->
+<!--                            android:text="@string/settings_start_1" />-->
+
+
+<!--                    </LinearLayout>-->
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:paddingStart="12dp"
-                        android:paddingTop="5dp"
-                        android:paddingEnd="12dp">
+                        android:orientation="horizontal"
+                        android:paddingVertical="10dp">
 
-                        <TextView
-                            android:layout_width="0dp"
+<!--                        <TextView-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:text="@string/settings_final"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="35sp"-->
+<!--                            android:textStyle="bold" />-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="10dp"
-                            android:layout_weight="2"
-                            android:text="@string/settings_start"
-                            android:textColor="@color/white"
-                            android:textSize="35sp"
-                            android:textStyle="bold" />
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-                        <EditText
-                            android:id="@+id/editTextTextPersonNae"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@null"
-                            android:ems="10"
-                            android:inputType="textPersonName"
-                            android:text="@string/settings_start_1" />
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="@string/transport_destination"
+                                android:background="@drawable/section_common_white"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/editTextTextPersonName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@color/white"-->
+<!--                            android:ems="10"-->
+<!--                            android:inputType="textPersonName"-->
+<!--                            android:text="@string/settings_final_1" />-->
 
 
-                    </TableRow>
+                    </LinearLayout>
 
-                    <TableRow
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_main_children"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingStart="12dp"
-                        android:paddingTop="5dp"
-                        android:paddingEnd="12dp">
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="@color/main_transport"
+                        android:includeFontPadding="false"
+                        android:text="@string/transport_taxi"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="15dp" />
 
-                        <TextView
-                            android:layout_width="10dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="10dp"
-                            android:layout_weight="2"
-                            android:text="@string/settings_final"
-                            android:textColor="@color/white"
-                            android:textSize="35sp"
-                            android:textStyle="bold" />
-
-                        <EditText
-                            android:id="@+id/editTextTextPersonName"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@null"
-                            android:ems="10"
-                            android:inputType="textPersonName"
-                            android:text="@string/settings_final_1"
-                            />
-
-
-                    </TableRow>
-
-                    <TableRow
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_main_transport"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingStart="12dp"
-                        android:paddingEnd="12dp"
-                        android:paddingBottom="5dp">
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:backgroundTint="@color/main_shopping"
+                        android:includeFontPadding="false"
+                        android:text="@string/transport_bus"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="15dp" />
 
-                        <com.google.android.material.button.MaterialButton
-                            android:id="@+id/button_main_children"
-                            android:layout_width="190dp"
-                            android:layout_height="120dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_weight="1"
-                            android:height="150dp"
-                            android:backgroundTint="@color/main_transport"
-
-                            android:includeFontPadding="false"
-                            android:paddingStart="15dp"
-                            android:paddingEnd="0dp"
-                            android:text="@string/settings_taxi"
-                            android:textColor="@color/white"
-                            android:textColorHint="@color/white"
-                            android:textSize="30sp"
-                            android:textStyle="bold"
-                            app:cornerRadius="15dp" />
-
-                        <com.google.android.material.button.MaterialButton
-                            android:id="@+id/button_main_transport"
-                            android:layout_width="60dp"
-                            android:layout_height="120dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_weight="1"
-                            android:height="150dp"
-                            android:backgroundTint="@color/main_shopping"
-                            android:includeFontPadding="false"
-                            android:paddingStart="15dp"
-                            android:paddingEnd="0dp"
-                            android:text="@string/settings_bus"
-                            android:textColor="@color/white"
-                            android:textColorHint="@color/white"
-                            android:textSize="30sp"
-                            android:textStyle="bold"
-                            app:cornerRadius="15dp" />
-
-                    </TableRow>
-
-                </TableLayout>
+                </LinearLayout>
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="410dp"
+                    android:layout_height="match_parent"
                     android:layout_marginTop="12dp"
-                    android:background="@drawable/main_section_background"
+                    android:background="@drawable/section_common_white"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:paddingStart="12dp"
-                    android:paddingTop="10dp"
-                    android:paddingEnd="12dp"
-                    android:paddingBottom="10dp">
+                    android:orientation="vertical"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp">
 
-                    <TableLayout
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="400dp"
-                        android:background="@drawable/main_section_background">
+                        android:layout_height="wrap_content"
+                        android:text="@string/transport_park"
+                        android:textColor="@color/black"
+                        android:textSize="35sp"
+                        android:textStyle="bold" />
 
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            android:paddingStart="12dp"
-                            android:paddingTop="5dp"
-                            android:paddingEnd="12dp">
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:src="@drawable/fengjing" />
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="50dp"
-                                android:layout_marginEnd="10dp"
-                                android:layout_weight="2"
-                                android:text="@string/settings_park"
-                                android:textColor="@color/black"
-                                android:textSize="35sp"
-                                android:textStyle="bold" />
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="50dp"
-                                android:layout_marginEnd="10dp"
-                                android:layout_weight="2"
-                                android:text="@string/settings_park_1"
-                                android:textColor="@color/black"
-                                android:textSize="12sp"
-                                 />
-                        </TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/transport_park_type"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
 
-                        <TableRow
-                            android:layout_width="38dp"
-                            android:layout_height="150dp"
-                            android:paddingStart="20dp"
-                            android:paddingTop="5dp"
-                            android:paddingEnd="12dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/transport_park_site"
+                        android:textColor="@color/black"
+                        android:textSize="26sp" />
 
-                            <ImageView
-                                android:id="@+id/imageView4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/fengjing" />
-                        </TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/transport_park_level"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
 
-                        <TableRow
-                            android:layout_width="149dp"
-                            android:layout_height="match_parent"
-                            android:paddingStart="10dp"
-                            android:paddingTop="5dp"
-                            android:paddingEnd="12dp">
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_main_shopping"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/main_color_mid"
+                        android:includeFontPadding="false"
+                        android:paddingVertical="10dp"
+                        android:text="@string/transport_go"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="15dp" />
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="37dp"
-                                android:layout_marginEnd="10dp"
-                                android:layout_weight="2"
-                                android:text="@string/settings_park_type"
-                                android:textColor="@color/black"
-                                android:textSize="30sp"
-                                android:gravity="center"/>
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="149dp"
-                            android:layout_height="match_parent"
-                            android:paddingStart="10dp"
-                            android:paddingTop="5dp"
-                            android:paddingEnd="12dp">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="37dp"
-                                android:layout_marginEnd="10dp"
-                                android:layout_weight="2"
-                                android:text="@string/settings_park_site"
-                                android:textColor="@color/black"
-                                android:textSize="30sp"
-                                android:gravity="center"/>
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="149dp"
-                            android:layout_height="match_parent"
-                            android:paddingStart="10dp"
-                            android:paddingTop="5dp"
-                            android:paddingEnd="12dp">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="37dp"
-                                android:layout_marginEnd="10dp"
-                                android:layout_weight="2"
-                                android:text="@string/settings_park_level"
-                                android:textColor="@color/black"
-                                android:textSize="30sp"
-                                android:gravity="center"/>
-                        </TableRow>
-                        <TableRow
-                            android:layout_width="149dp"
-                            android:layout_height="match_parent"
-                            android:paddingStart="50dp"
-                            android:paddingTop="5dp"
-                            android:paddingEnd="50dp">
-
-                            <com.google.android.material.button.MaterialButton
-                                android:id="@+id/button_main_shopping"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="8dp"
-                                android:layout_weight="1"
-                                android:height="150dp"
-                                android:backgroundTint="@color/main_family"
-                                android:includeFontPadding="false"
-                                android:paddingStart="10dp"
-                                android:paddingEnd="0dp"
-                                android:text="@string/settings_go"
-                                android:textColor="@color/white"
-                                android:textColorHint="@color/white"
-                                android:textSize="30sp"
-                                app:cornerRadius="15dp"
-                                android:textStyle="bold"
-                                />
-                        </TableRow>
-                    </TableLayout>
                 </LinearLayout>
+
             </LinearLayout>
         </ScrollView>
 
