@@ -35,9 +35,6 @@ class MainActivity : AppCompatActivity(), HCountDown.onCountDownListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        viewCountDown = findViewById(R.layout.dialog_reverse_trigger)
-        hCountDown = HCountDown(DURATION, INTERVAL, this)
-
         setSupportActionBar(binding.toolbar)
 
         val navController = findNavController(R.id.nav_host_fragment_content_main)
@@ -45,6 +42,8 @@ class MainActivity : AppCompatActivity(), HCountDown.onCountDownListener {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         initView()
+//        viewCountDown = findViewById(R.id.text_countdown)
+//        hCountDown = HCountDown(DURATION, INTERVAL, this)
     }
 
     fun startCountDown(view: View?) {

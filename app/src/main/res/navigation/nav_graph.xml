@@ -13,10 +13,20 @@
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/SecondFragment"
+            app:enterAnim="@anim/in_from_right"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            />
         <action
             android:id="@+id/action_FirstFragment_to_emergencyFragment"
-            app:destination="@id/emergencyFragment" />
+            app:destination="@id/emergencyFragment"
+            app:enterAnim="@anim/in_from_right"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_FirstFragment_to_medicalFragment"
+            app:destination="@id/medicalFragment"
+            app:enterAnim="@anim/in_from_right"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -26,7 +36,9 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/in_from_right"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
     </fragment>
     <fragment
         android:id="@+id/emergencyFragment"
@@ -34,6 +46,18 @@
         android:label="EmergencyFragment" >
         <action
             android:id="@+id/action_emergencyFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/in_from_right"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/medicalFragment"
+        android:name="tech.krauwarrior.silverhelper.MedicalFragment"
+        android:label="MedicalFragment" >
+        <action
+            android:id="@+id/action_medicalFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/in_from_right"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
     </fragment>
 </navigation>
