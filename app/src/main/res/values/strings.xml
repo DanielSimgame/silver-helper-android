@@ -32,7 +32,8 @@
     <string name="settings_delete_account">注销账号</string>
     <string name="settings_logout">退出登录</string>
     <!-- 看病 -->
-    <string name="medic_title">看病</string>
+<!--    <string name="medic_title">看病</string>-->
+    <string name="medic_title">看病 - 通惠社区</string>
     <string name="medic_name_doctor">张医生</string>
     <string name="medic_dept_doctor">社区全科医生</string>
     <string name="medic_call_doctor">电话联系</string>

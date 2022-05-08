@@ -21,8 +21,8 @@
             android:id="@+id/linearlayout_main_top_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginBottom="12dp"
+            android:gravity="center"
             android:orientation="horizontal">
 
 
@@ -32,291 +32,212 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="2"
                 android:text="@string/medic_title"
-                android:textSize="72sp"
                 android:textColor="@color/white"
+                android:textSize="48sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/section_half_transparent_white"
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/section_common_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
 
-                <TableLayout
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/main_section_background"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp">
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingStart="12dp"
-                        android:paddingEnd="12dp"
-                        android:paddingBottom="5dp">
-
-
-                        <ImageView
-                            android:id="@+id/imageView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/yisheng" />
-
-                        <TableLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/main_section_background">
-
-                            <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:paddingStart="12dp"
-                                android:paddingEnd="12dp"
-                                android:paddingBottom="5dp">
-
-                                <TextView
-                                    android:id="@+id/text_medic_name_doctor"
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginEnd="10dp"
-                                    android:layout_weight="2"
-                                    android:text="@string/medic_name_doctor"
-                                    android:textColor="@color/black"
-                                    android:textSize="28sp"
-                                    android:textStyle="bold" />
-                            </TableRow>
-
-                            <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:paddingStart="12dp"
-                                android:paddingEnd="12dp"
-                                android:paddingBottom="5dp">
-
-                                <TextView
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginEnd="10dp"
-                                    android:layout_weight="2"
-                                    android:text="@string/medic_dept_doctor"
-                                    android:textColor="@color/black"
-                                    android:textSize="28sp" />
-                            </TableRow>
-
-                            <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="20dp"
-                                android:paddingStart="12dp"
-                                android:paddingEnd="12dp"
-                                android:paddingBottom="5dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/button_medic_call_doctor"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="60dp"
-                                    android:layout_marginStart="0dp"
-                                    android:layout_weight="1"
-                                    android:height="150dp"
-                                    android:backgroundTint="@color/main_family"
-                                    android:includeFontPadding="false"
-                                    android:paddingStart="0dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/medic_call_doctor"
-                                    android:textColor="@color/white"
-                                    android:textColorHint="@color/white"
-                                    android:textSize="30sp"
-                                    android:textStyle="bold"
-                                    app:cornerRadius="15dp" />
-
-                            </TableRow>
-
-                        </TableLayout>
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingStart="12dp"
-                        android:paddingEnd="12dp"
-                        android:paddingBottom="5dp">
-
-
-                        <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/yiyun" />
-
-                        <TableLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/main_section_background">
-
-                            <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:paddingStart="12dp"
-                                android:paddingEnd="12dp"
-                                android:paddingBottom="5dp">
-
-                                <TextView
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginEnd="10dp"
-                                    android:layout_weight="2"
-                                    android:text="@string/medic_name_clinic"
-                                    android:textColor="@color/black"
-                                    android:textSize="28sp"
-                                    android:textStyle="bold" />
-                            </TableRow>
-
-                            <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:paddingStart="12dp"
-                                android:paddingEnd="12dp"
-                                android:paddingBottom="5dp">
-
-                                <TextView
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginEnd="10dp"
-                                    android:layout_weight="2"
-                                    android:text="@string/medic_district_clinic"
-                                    android:textColor="@color/black"
-                                    android:textSize="28sp" />
-                            </TableRow>
-
-                            <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="20dp"
-                                android:paddingStart="12dp"
-                                android:paddingEnd="12dp"
-                                android:paddingBottom="5dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/button_medic_call_clinic"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="60dp"
-                                    android:layout_marginStart="0dp"
-                                    android:layout_weight="1"
-                                    android:height="150dp"
-                                    android:backgroundTint="@color/main_family"
-                                    android:includeFontPadding="false"
-                                    android:paddingStart="0dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/medic_call_clinic"
-                                    android:textColor="@color/white"
-                                    android:textColorHint="@color/white"
-                                    android:textSize="30sp"
-                                    android:textStyle="bold"
-                                    app:cornerRadius="15dp" />
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/button_medic_map"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="60dp"
-                                    android:layout_marginStart="10dp"
-                                    android:layout_weight="1"
-                                    android:height="150dp"
-                                    android:backgroundTint="@color/white"
-                                    android:includeFontPadding="false"
-                                    android:paddingStart="0dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/medic_map_clinic"
-                                    android:textColor="@color/black"
-                                    android:textColorHint="@color/white"
-                                    android:textSize="30sp"
-                                    android:textStyle="bold"
-                                    app:cornerRadius="15dp" />
-                            </TableRow>
-
-                        </TableLayout>
-
-                    </TableRow>
-                </TableLayout>
-
+                    app:srcCompat="@drawable/pic_doctor" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="310dp"
-                    android:layout_marginTop="12dp"
-                    android:background="@drawable/main_section_background"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:paddingStart="12dp"
-                    android:paddingTop="10dp"
-                    android:paddingEnd="12dp"
-                    android:paddingBottom="10dp">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
-                    <TableLayout
+                    <TextView
+                        android:id="@+id/text_medic_name_doctor"
                         android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:background="@drawable/main_section_background">
+                        android:layout_height="wrap_content"
+                        android:text="@string/medic_name_doctor"
+                        android:textColor="@color/black"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
 
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            android:paddingStart="12dp"
-                            android:paddingTop="5dp"
-                            android:paddingEnd="12dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/medic_dept_doctor"
+                        android:textColor="@color/black"
+                        android:textSize="28sp" />
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="50dp"
-                                android:layout_marginEnd="10dp"
-                                android:layout_weight="2"
-                                android:text="@string/medic_title_webview"
-                                android:textColor="@color/black"
-                                android:textSize="35sp"
-                                android:textStyle="bold" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_medic_call_doctor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:backgroundTint="@color/main_color_mid"
+                        android:includeFontPadding="false"
+                        android:minHeight="60dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/medic_call_doctor"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="15dp" />
 
-                        </TableRow>
-                        <TableRow
-                            android:layout_width="149dp"
-                            android:layout_height="match_parent"
-                            android:paddingStart="10dp"
-                            android:paddingTop="5dp"
-                            android:paddingEnd="12dp">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="120dp"
-                                android:layout_marginEnd="10dp"
-                                android:layout_weight="2"
-                                android:text="@string/medic_placeholder_1_webview"
-                                android:textColor="@color/black"
-                                android:textSize="30sp"
-                                />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="149dp"
-                            android:layout_height="50dp"
-                            android:paddingStart="10dp"
-                            android:paddingTop="5dp"
-                            android:paddingEnd="12dp">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="37dp"
-                                android:layout_marginEnd="10dp"
-                                android:layout_weight="2"
-                                android:text="@string/medic_placeholder_2_webview"
-                                android:textColor="@color/black"
-                                android:textSize="30sp" />
-                        </TableRow>
-                    </TableLayout>
                 </LinearLayout>
             </LinearLayout>
-        </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/section_common_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="156dp"
+                    app:srcCompat="@drawable/pic_clinic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="2"
+                        android:text="@string/medic_name_clinic"
+                        android:textColor="@color/black"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="2"
+                        android:text="@string/medic_district_clinic"
+                        android:textColor="@color/black"
+                        android:textSize="28sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="60dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/button_medic_call_clinic"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_weight="1"
+                            android:height="150dp"
+                            android:backgroundTint="@color/main_color_mid"
+                            android:includeFontPadding="false"
+                            android:minHeight="60dp"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="0dp"
+                            android:text="@string/medic_call_clinic"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:cornerRadius="15dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/button_medic_map"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:height="150dp"
+                            android:backgroundTint="@color/white"
+                            android:includeFontPadding="false"
+                            android:minHeight="60dp"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="0dp"
+                            android:text="@string/medic_map_clinic"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:cornerRadius="15dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/section_common_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/medic_title_webview"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:drawableRightCompat="@drawable/third_party" />
+
+                    <LinearLayout
+                        android:id="@+id/medic_tips_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/medic_placeholder_1_webview"
+                            android:textColor="@color/black"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/medic_placeholder_2_webview"
+                            android:textColor="@color/black"
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
 
     </LinearLayout>
 

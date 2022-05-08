@@ -6,6 +6,7 @@
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/default_btn.xml" value="0.193" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/default_btn_background.xml" value="0.193" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/gradual_color_bg.xml" value="0.204" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/half_transparent_white_section.xml" value="0.2505" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/ic_alarm.xml" value="0.16" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.2725" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/ic_basket_shopping_solid.xml" value="0.169" />
@@ -28,6 +29,7 @@
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/main_btn_shopping.xml" value="0.191" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/main_btn_transport.xml" value="0.191" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/main_section_background.xml" value="0.191" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/section_common_white.xml" value="0.2505" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/settings_background.xml" value="0.1775" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/settings_background_inner.xml" value="0.1775" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout-v23/fragment_first.xml" value="0.1" />
@@ -40,7 +42,7 @@
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout/fragment_family.xml" value="0.1" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout/fragment_first.xml" value="0.25" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout/fragment_main_page.xml" value="0.5" />
-        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout/fragment_medic.xml" value="0.5" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout/fragment_medic.xml" value="0.378125" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout/fragment_settings.xml" value="0.1" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout/kanyisheng.xml" value="0.2677083333333333" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout/zhaoernv.xml" value="0.2677083333333333" />
