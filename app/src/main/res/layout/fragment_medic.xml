@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="2"
-                android:text="@string/main_doctor"
+                android:text="@string/medic_title"
                 android:textSize="72sp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
@@ -50,7 +50,9 @@
                 <TableLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/main_section_background">
+                    android:background="@drawable/main_section_background"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
 
                     <TableRow
                         android:layout_width="match_parent"
@@ -70,6 +72,26 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/main_section_background">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/text_medic_name_doctor"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_weight="2"
+                                    android:text="@string/medic_name_doctor"
+                                    android:textColor="@color/black"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
                             <TableRow
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -82,35 +104,20 @@
                                     android:layout_height="match_parent"
                                     android:layout_marginEnd="10dp"
                                     android:layout_weight="2"
-                                    android:text="张医生"
+                                    android:text="@string/medic_dept_doctor"
                                     android:textColor="@color/black"
-                                    android:textSize="28sp"
-                                    android:textStyle="bold" />
+                                    android:textSize="28sp" />
                             </TableRow>
-                            <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:paddingStart="12dp"
-                                android:paddingEnd="12dp"
-                                android:paddingBottom="5dp">
-                                <TextView
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginEnd="10dp"
-                                    android:layout_weight="2"
-                                    android:text="社区全科医生"
-                                    android:textColor="@color/black"
-                                    android:textSize="28sp"
-                                    />
-                            </TableRow>
+
                             <TableRow
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
                                 android:paddingStart="12dp"
                                 android:paddingEnd="12dp"
                                 android:paddingBottom="5dp">
+
                                 <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/button_main_transport1"
+                                    android:id="@+id/button_medic_call_doctor"
                                     android:layout_width="match_parent"
                                     android:layout_height="60dp"
                                     android:layout_marginStart="0dp"
@@ -120,7 +127,7 @@
                                     android:includeFontPadding="false"
                                     android:paddingStart="0dp"
                                     android:paddingEnd="0dp"
-                                    android:text="电话联系"
+                                    android:text="@string/medic_call_doctor"
                                     android:textColor="@color/white"
                                     android:textColorHint="@color/white"
                                     android:textSize="30sp"
@@ -151,6 +158,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/main_section_background">
+
                             <TableRow
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -163,35 +171,38 @@
                                     android:layout_height="match_parent"
                                     android:layout_marginEnd="10dp"
                                     android:layout_weight="2"
-                                    android:text="XXXX诊所"
+                                    android:text="@string/medic_name_clinic"
                                     android:textColor="@color/black"
                                     android:textSize="28sp"
                                     android:textStyle="bold" />
                             </TableRow>
+
                             <TableRow
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:paddingStart="12dp"
                                 android:paddingEnd="12dp"
                                 android:paddingBottom="5dp">
+
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_marginEnd="10dp"
                                     android:layout_weight="2"
-                                    android:text="狮子山街道"
+                                    android:text="@string/medic_district_clinic"
                                     android:textColor="@color/black"
-                                    android:textSize="28sp"
-                                    />
+                                    android:textSize="28sp" />
                             </TableRow>
+
                             <TableRow
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
                                 android:paddingStart="12dp"
                                 android:paddingEnd="12dp"
                                 android:paddingBottom="5dp">
+
                                 <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/button_main_transport"
+                                    android:id="@+id/button_medic_call_clinic"
                                     android:layout_width="match_parent"
                                     android:layout_height="60dp"
                                     android:layout_marginStart="0dp"
@@ -201,14 +212,15 @@
                                     android:includeFontPadding="false"
                                     android:paddingStart="0dp"
                                     android:paddingEnd="0dp"
-                                    android:text="电话"
+                                    android:text="@string/medic_call_clinic"
                                     android:textColor="@color/white"
                                     android:textColorHint="@color/white"
                                     android:textSize="30sp"
                                     android:textStyle="bold"
                                     app:cornerRadius="15dp" />
+
                                 <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/button_main"
+                                    android:id="@+id/button_medic_map"
                                     android:layout_width="match_parent"
                                     android:layout_height="60dp"
                                     android:layout_marginStart="10dp"
@@ -218,13 +230,12 @@
                                     android:includeFontPadding="false"
                                     android:paddingStart="0dp"
                                     android:paddingEnd="0dp"
-                                    android:text="地图"
+                                    android:text="@string/medic_map_clinic"
                                     android:textColor="@color/black"
                                     android:textColorHint="@color/white"
                                     android:textSize="30sp"
                                     android:textStyle="bold"
-                                    app:cornerRadius="15dp"
-                                    />
+                                    app:cornerRadius="15dp" />
                             </TableRow>
 
                         </TableLayout>
@@ -262,7 +273,7 @@
                                 android:layout_height="50dp"
                                 android:layout_marginEnd="10dp"
                                 android:layout_weight="2"
-                                android:text="常用药与常见症状"
+                                android:text="@string/medic_title_webview"
                                 android:textColor="@color/black"
                                 android:textSize="35sp"
                                 android:textStyle="bold" />
@@ -280,7 +291,7 @@
                                 android:layout_height="120dp"
                                 android:layout_marginEnd="10dp"
                                 android:layout_weight="2"
-                                android:text="阿莫西林—头疼感冒"
+                                android:text="@string/medic_placeholder_1_webview"
                                 android:textColor="@color/black"
                                 android:textSize="30sp"
                                 />
@@ -298,7 +309,7 @@
                                 android:layout_height="37dp"
                                 android:layout_marginEnd="10dp"
                                 android:layout_weight="2"
-                                android:text="畏寒怕冷怎么办？"
+                                android:text="@string/medic_placeholder_2_webview"
                                 android:textColor="@color/black"
                                 android:textSize="30sp" />
                         </TableRow>

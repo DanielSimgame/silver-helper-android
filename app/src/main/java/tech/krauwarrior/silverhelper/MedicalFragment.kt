@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import tech.krauwarrior.silverhelper.databinding.FragmentEmergencyBinding
 import tech.krauwarrior.silverhelper.helpers.HPermission
 import tech.krauwarrior.silverhelper.databinding.FragmentMedicBinding
 
@@ -18,10 +17,10 @@ class MedicalFragment : Fragment() {
     private lateinit var hPermission: HPermission
     private lateinit var alertDialog: AlertDialog.Builder
 
-    private fun makeCall(phoneNumber: String) {
+    private fun makeDial(phoneNumber: String) {
         if (hPermission.checkPermission(requireContext(), HPermission.PERMISSION_CALL_PHONE)) {
             val intent = Intent()
-            intent.action = Intent.ACTION_CALL
+            intent.action = Intent.ACTION_DIAL
             intent.data = Uri.parse("tel:$phoneNumber")
             startActivity(intent)
         } else {
@@ -30,7 +29,7 @@ class MedicalFragment : Fragment() {
                 HPermission.PERMISSION_CALL_PHONE,
                 HPermission.Request_CALL_PHONE
             )
-            makeCall(phoneNumber)
+            makeDial(phoneNumber)
         }
     }
 
@@ -43,6 +42,18 @@ class MedicalFragment : Fragment() {
         binding = FragmentMedicBinding.inflate(inflater, container, false)
 
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.buttonMedicCallDoctor.setOnClickListener {
+            makeDial("027-88426013")
+        }
+
+        binding.buttonMedicCallClinic.setOnClickListener {
+            makeDial("027-88426013")
+        }
     }
 
 }

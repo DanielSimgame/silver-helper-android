@@ -31,13 +31,24 @@
     <string name="settings_about">关于软件</string>
     <string name="settings_delete_account">注销账号</string>
     <string name="settings_logout">退出登录</string>
+    <!-- 看病 -->
+    <string name="medic_title">看病</string>
+    <string name="medic_name_doctor">张医生</string>
+    <string name="medic_dept_doctor">社区全科医生</string>
+    <string name="medic_call_doctor">电话联系</string>
+    <string name="medic_name_clinic">社区诊所</string>
+    <string name="medic_district_clinic">狮子山街道</string>
+    <string name="medic_call_clinic">电话</string>
+    <string name="medic_map_clinic">地图</string>
+    <string name="medic_title_webview">常用药与常见症状</string>
+    <string name="medic_placeholder_1_webview">阿莫西林—头疼感冒</string>
+    <string name="medic_placeholder_2_webview">畏寒怕冷怎么办？</string>
     <!-- 报警 -->
     <string name="settings_firstAid">120急救</string>
     <string name="settings_police">110公安</string>
     <string name="settings_firemen">119消防</string>
     <string name="settings_trafficPolice">122交警</string>
     <string name="settings_hint">在您报警的同时我们将会发送警报到您的家人的手机上。\n\n提示：\n报警将采用反触发的方式拨打，即按下报警后3秒内没有取消就会拨打对应的报警电话。</string>
-
     <!-- 出行 -->
     <string name="settings_start">起点</string>
     <string name="settings_start_1">南李路武昌首义学院</string>
