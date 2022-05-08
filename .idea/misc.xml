@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3645" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/default_btn.xml" value="0.193" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/default_btn_background.xml" value="0.193" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/gradual_color_bg.xml" value="0.204" />
@@ -13,6 +14,7 @@
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/ic_bus_solid.xml" value="0.169" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/ic_car_burst_solid.xml" value="0.2725" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/ic_circle_arrow_left_solid.xml" value="0.173" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3645" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/ic_microphone_solid.xml" value="0.1625" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/ic_people_roof_solid.xml" value="0.169" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/drawable/ic_person_cane_solid.xml" value="0.1725" />
@@ -47,6 +49,7 @@
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout/fragment_transport.xml" value="0.1778115501519757" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout/kanyisheng.xml" value="0.2677083333333333" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/layout/zhaoernv.xml" value="0.2677083333333333" />
+        <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3445" />
         <entry key="..\:/codes/AndroidStudioProjects/SilverHelper/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.217" />
       </map>
     </option>

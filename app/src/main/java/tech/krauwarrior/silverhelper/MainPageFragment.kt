@@ -1,15 +1,11 @@
 package tech.krauwarrior.silverhelper
 
-import android.app.Activity
-import android.app.AlertDialog
-import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.webkit.WebView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import tech.krauwarrior.silverhelper.databinding.FragmentMainPageBinding
@@ -71,7 +67,12 @@ class MainPageFragment : Fragment() {
 
         // Payment Code / 付款码
         binding.buttonMainPaymentQrcode.setOnClickListener {
-            openPaymentCode()
+            openApp(HAppCaller.getPkgAlipay())
+        }
+
+        // Anti Fraud / 国家反诈中心
+        binding.buttonMainAntiFraud.setOnClickListener {
+            openApp(HAppCaller.getPkgAntiFraud())
         }
     }
 
@@ -87,14 +88,15 @@ class MainPageFragment : Fragment() {
         startActivity(intent)
     }
 
-    private fun openPaymentCode () {
-//        val apkName = "com.alipay.mobile.nebula"
-        val apkName = "com.eg.android.AlipayGphone"
-        val isAlipayExist = hAppCaller.isApkInstalled(requireContext(), apkName)
-        if (isAlipayExist) {
+    private fun openApp (apkName: String) {
+        if (apkName.isEmpty()) {
+            return
+        }
+        val isAppExist = hAppCaller.isApkInstalled(requireContext(), apkName)
+        if (isAppExist) {
             hAppCaller.callAppDirectly(requireContext(), apkName)
         } else {
-            hAppCaller.launchAppDetail(requireContext(), apkName, apkName)
+            hAppCaller.showInAppMarket(requireContext(), apkName)
         }
     }
 }

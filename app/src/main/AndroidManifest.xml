@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="tech.krauwarrior.silverhelper">
 
     <uses-permission android:name="android.permission.INTERNET" /><!--联网权限-->
     <uses-permission android:name="android.permission.CALL_PHONE" /><!--直接拨打电话权限-->
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.VIBRATE"/><!--震动权限-->
 
     <application
