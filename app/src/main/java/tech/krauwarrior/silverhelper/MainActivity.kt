@@ -56,10 +56,11 @@ class MainActivity : AppCompatActivity(), HCountDown.onCountDownListener {
     }
 
     private fun initView() {
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "语音操作预留按钮", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+        // TODO: 语音识别功能
+//        binding.fab.setOnClickListener { view ->
+//            Snackbar.make(view, "语音操作预留按钮", Snackbar.LENGTH_LONG)
+//                .setAction("Action", null).show()
+//        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

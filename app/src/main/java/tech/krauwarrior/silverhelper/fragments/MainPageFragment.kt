@@ -63,7 +63,8 @@ class MainPageFragment : Fragment() {
 
         // Health Code / 健康码
         binding.buttonMainHealthQrcode.setOnClickListener {
-            openHealthCode()
+            // 打开健康码URL
+            openUrl("https://ur.alipay.com/3pBRbxfnGJKk2TlogSuZJq")
         }
 
         // Payment Code / 付款码
@@ -75,13 +76,28 @@ class MainPageFragment : Fragment() {
         binding.buttonMainAntiFraud.setOnClickListener {
             openApp(HAppCaller.getPkgAntiFraud())
         }
-        // Anti Fraud / 购物
+
+        // Shopping / 购物
         binding.buttonMainShopping.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_shoppingFragment)
         }
-        // Anti Fraud / 找儿女
+
+        // Family / 找亲人
         binding.buttonMainChildren.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_familyFragment)
+        }
+
+        // Pandemic Title / 疫情标题
+        binding.textViewPandemicTitle.setOnClickListener {
+            openUrl("https://www.baidu.com/s?wd=%E7%96%AB%E6%83%85&ie=utf-8")
+        }
+
+        // Video Recommendation Title & Image / 视频推荐标题 & 图片
+        binding.ImgVideoRecommend.setOnClickListener {
+            openUrl("https://www.bilibili.com/video/BV1c34y1X7sr")
+        }
+        binding.textViewVideosRecommendation.setOnClickListener {
+            openUrl("https://www.bilibili.com/video/BV1c34y1X7sr")
         }
     }
 
@@ -90,10 +106,10 @@ class MainPageFragment : Fragment() {
         _binding = null
     }
 
-    private fun openHealthCode () {
+    private fun openUrl (url: String) {
         val intent = Intent()
         intent.action = Intent.ACTION_VIEW
-        intent.data = Uri.parse("https://ur.alipay.com/3pBRbxfnGJKk2TlogSuZJq")
+        intent.data = Uri.parse(url)
         startActivity(intent)
     }
 
