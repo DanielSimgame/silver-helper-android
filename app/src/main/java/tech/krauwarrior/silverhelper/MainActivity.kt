@@ -12,9 +12,9 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.snackbar.Snackbar
 import tech.krauwarrior.silverhelper.databinding.ActivityMainBinding
-import tech.krauwarrior.silverhelper.helpers.HCountDown
-import tech.krauwarrior.silverhelper.helpers.HReverseTriggerDialog
-import tech.krauwarrior.silverhelper.helpers.VCountDown
+import tech.krauwarrior.silverhelper.libs.HCountDown
+import tech.krauwarrior.silverhelper.libs.HReverseTriggerDialog
+import tech.krauwarrior.silverhelper.libs.VCountDown
 
 class MainActivity : AppCompatActivity(), HCountDown.onCountDownListener {
 

@@ -1,6 +1,5 @@
-package tech.krauwarrior.silverhelper
+package tech.krauwarrior.silverhelper.fragments
 
-import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.Intent
 import android.net.Uri
@@ -8,11 +7,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import tech.krauwarrior.silverhelper.R
 import tech.krauwarrior.silverhelper.databinding.FragmentMedicBinding
-import tech.krauwarrior.silverhelper.helpers.HPermission
+import tech.krauwarrior.silverhelper.libs.HPermission
 
 class MedicalFragment : Fragment() {
     private lateinit var binding: FragmentMedicBinding

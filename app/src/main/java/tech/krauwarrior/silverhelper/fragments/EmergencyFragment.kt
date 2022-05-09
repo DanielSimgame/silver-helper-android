@@ -1,4 +1,4 @@
-package tech.krauwarrior.silverhelper
+package tech.krauwarrior.silverhelper.fragments
 
 import android.app.AlertDialog
 import android.content.Intent
@@ -8,11 +8,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import tech.krauwarrior.silverhelper.helpers.HPermission
+import tech.krauwarrior.silverhelper.libs.HPermission
 import tech.krauwarrior.silverhelper.databinding.FragmentEmergencyBinding
-import tech.krauwarrior.silverhelper.helpers.HCountDown
-import tech.krauwarrior.silverhelper.helpers.HReverseTriggerDialog
-import tech.krauwarrior.silverhelper.helpers.VCountDown
 
 class EmergencyFragment : Fragment() {
 

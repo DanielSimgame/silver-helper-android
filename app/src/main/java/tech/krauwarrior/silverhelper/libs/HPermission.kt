@@ -1,4 +1,4 @@
-package tech.krauwarrior.silverhelper.helpers
+package tech.krauwarrior.silverhelper.libs
 import android.Manifest
 import android.app.Activity
 import android.content.Context

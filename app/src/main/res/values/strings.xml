@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">银龄生活宝</string>
     <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
+    <!-- Strings used for tech.krauwarrior.silverhelper.fragments for navigation -->
     <string name="main_page_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
 

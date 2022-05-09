@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="tech.krauwarrior.silverhelper.MainPageFragment"
+        android:name="tech.krauwarrior.silverhelper.fragments.MainPageFragment"
         android:label="@string/main_page_label"
         tools:layout="@layout/fragment_main_page">
 
@@ -35,7 +35,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="tech.krauwarrior.silverhelper.SettingsFragment"
+        android:name="tech.krauwarrior.silverhelper.fragments.SettingsFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_settings">
 
@@ -47,7 +47,7 @@
     </fragment>
     <fragment
         android:id="@+id/emergencyFragment"
-        android:name="tech.krauwarrior.silverhelper.EmergencyFragment"
+        android:name="tech.krauwarrior.silverhelper.fragments.EmergencyFragment"
         android:label="EmergencyFragment" >
         <action
             android:id="@+id/action_emergencyFragment_to_FirstFragment"
@@ -57,7 +57,7 @@
     </fragment>
     <fragment
         android:id="@+id/medicalFragment"
-        android:name="tech.krauwarrior.silverhelper.MedicalFragment"
+        android:name="tech.krauwarrior.silverhelper.fragments.MedicalFragment"
         android:label="MedicalFragment" >
         <action
             android:id="@+id/action_medicalFragment_to_FirstFragment"
@@ -67,7 +67,7 @@
     </fragment>
     <fragment
         android:id="@+id/transportFragment"
-        android:name="tech.krauwarrior.silverhelper.TransportFragment"
+        android:name="tech.krauwarrior.silverhelper.fragments.TransportFragment"
         android:label="TransportFragment" >
         <action
             android:id="@+id/action_transportFragment_to_FirstFragment"

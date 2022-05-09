@@ -1,16 +1,13 @@
-package tech.krauwarrior.silverhelper
+package tech.krauwarrior.silverhelper.fragments
 
 import android.app.AlertDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.Animation
-import android.view.animation.TranslateAnimation
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
 import tech.krauwarrior.silverhelper.databinding.FragmentTransportBinding
-import tech.krauwarrior.silverhelper.helpers.HPermission
+import tech.krauwarrior.silverhelper.libs.HPermission
 
 class TransportFragment : Fragment() {
     private lateinit var binding: FragmentTransportBinding
