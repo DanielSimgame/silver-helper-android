@@ -75,6 +75,14 @@ class MainPageFragment : Fragment() {
         binding.buttonMainAntiFraud.setOnClickListener {
             openApp(HAppCaller.getPkgAntiFraud())
         }
+        // Anti Fraud / 购物
+        binding.buttonMainShopping.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_shoppingFragment)
+        }
+        // Anti Fraud / 找儿女
+        binding.buttonMainChildren.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_familyFragment)
+        }
     }
 
     override fun onDestroyView() {

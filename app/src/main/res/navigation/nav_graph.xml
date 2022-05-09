@@ -32,6 +32,12 @@
             app:destination="@id/transportFragment"
             app:enterAnim="@anim/in_from_right"
             app:exitAnim="@anim/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_FirstFragment_to_familyFragment"
+            app:destination="@id/familyFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_shoppingFragment"
+            app:destination="@id/shoppingFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -71,6 +77,26 @@
         android:label="TransportFragment" >
         <action
             android:id="@+id/action_transportFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/in_from_right"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/familyFragment"
+        android:name="tech.krauwarrior.silverhelper.fragments.FamilyFragment"
+        android:label="FamilyFragment" >
+        <action
+            android:id="@+id/action_familyFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/in_from_right"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/shoppingFragment"
+        android:name="tech.krauwarrior.silverhelper.fragments.ShoppingFragment"
+        android:label="ShoppingFragment" >
+        <action
+            android:id="@+id/action_shoppingFragment_to_FirstFragment"
             app:destination="@id/FirstFragment"
             app:enterAnim="@anim/in_from_right"
             app:exitAnim="@anim/nav_default_exit_anim"/>

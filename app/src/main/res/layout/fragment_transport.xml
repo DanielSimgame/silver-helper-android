@@ -200,14 +200,11 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
+                        <ImageView
+                            android:id="@+id/imageView8"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/transport_park_level"
-                            android:textColor="@color/black"
-                            android:textSize="24sp" />
-
+                            android:src="@drawable/pinfen" />
 
 
                     </LinearLayout>

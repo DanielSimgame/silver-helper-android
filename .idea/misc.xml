@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/activity_main.xml" value="0.1125" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/dialog_reverse_trigger.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/fragment_emergency.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/fragment_family.xml" value="0.1125" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/fragment_main_page.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/fragment_medic.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/fragment_payment.xml" value="0.1125" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/fragment_settings.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/fragment_shopping.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/silver-helper-android/app/src/main/res/layout/fragment_transport.xml" value="0.1" />
         <entry key="..\:/Users/finalreality/Desktop/silver-helper-android/app/src/main/res/layout/activity_main.xml" value="0.4860031104199067" />
         <entry key="..\:/Users/finalreality/Desktop/silver-helper-android/app/src/main/res/layout/content_main.xml" value="0.33" />
         <entry key="..\:/Users/finalreality/Desktop/silver-helper-android/app/src/main/res/layout/dialog_reverse_trigger.xml" value="0.29635416666666664" />
