@@ -195,13 +195,22 @@
                         android:textColor="@color/black"
                         android:textSize="26sp" />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="@string/transport_park_level"
-                        android:textColor="@color/black"
-                        android:textSize="30sp" />
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/transport_park_level"
+                            android:textColor="@color/black"
+                            android:textSize="24sp" />
+
+
+
+                    </LinearLayout>
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/button_main_shopping"

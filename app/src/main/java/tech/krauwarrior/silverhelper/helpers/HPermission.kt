@@ -26,6 +26,7 @@ class HPermission {
         const val PERMISSION_BODY_SENSORS = Manifest.permission.BODY_SENSORS
         const val PERMISSION_READ_CALENDAR = Manifest.permission.READ_CALENDAR
         const val PERMISSION_WRITE_CALENDAR = Manifest.permission.WRITE_CALENDAR
+        const val PERMISSION_GEO = Manifest.permission.ACCESS_FINE_LOCATION
         const val Request_CAMERA = 1
         const val Request_WRITE_EXTERNAL_STORAGE = 2
         const val Request_READ_EXTERNAL_STORAGE = 3
@@ -42,6 +43,7 @@ class HPermission {
         const val Request_BODY_SENSORS = 14
         const val Request_READ_CALENDAR = 15
         const val Request_WRITE_CALENDAR = 16
+        const val Request_GEO = 17
     }
 
     // permission checker

@@ -5,9 +5,15 @@
 
     <uses-permission android:name="android.permission.INTERNET" /><!--联网权限-->
     <uses-permission android:name="android.permission.CALL_PHONE" /><!--直接拨打电话权限-->
-    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
         tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.VIBRATE"/><!--震动权限-->
+    <uses-permission android:name="android.permission.VIBRATE" /><!--震动权限-->
+    <!-- Always include this permission -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!--大概位置权限-->
+
+    <!-- Include only if your app benefits from precise location access. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!--精确位置权限-->
 
     <application
         android:allowBackup="true"
@@ -16,6 +22,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SilverHelper">
+        <!-- Recommended for Android 9 (API level 28) and lower. -->
+        <!-- Required for Android 10 (API level 29) and higher. -->
+        <service
+            android:name="tech.krauwarrior.silverhelper.service.GeoService"
+            android:foregroundServiceType="location">
+            <!-- Any inner elements would go here. -->
+        </service>
         <activity
             android:name=".MainActivity"
             android:exported="true"
