@@ -7,12 +7,10 @@ import java.util.Set;
 
 // DAL层逻辑
 public class DataAccessLayer {
-    public static void main(){
-        Map dict = new HashMap();
+    private static HashMap<String, String> DataBase = new HashMap<String, String>();
 
-    }
-
-    public boolean add(){
+    public boolean add(String key, String value){
+        DataBase.put(key, value);
         return true;
     }
 
