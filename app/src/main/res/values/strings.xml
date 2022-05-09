@@ -65,22 +65,23 @@
     <string name="transport_park_site">武昌区张之洞路</string>
     <string name="transport_park_level">评分</string>
     <string name="transport_go">去这里</string>
-
     <!-- 买菜 -->
     <string name="transport_s1">社区买菜</string>
-    <string name="transport_s2">我买的</string>
+    <string name="transport_s2">我买到的</string>
     <string name="transport_s3">南李路22号</string>
-    <string name="transport_s4">修改</string>
+    <string name="transport_s4">更换地址</string>
     <string name="transport_s5">蔬菜</string>
     <string name="transport_s6">水果</string>
     <string name="transport_s7">粮油</string>
     <string name="transport_s8">配料</string>
     <string name="transport_s9">日用</string>
     <string name="transport_s10">工具</string>
-    <string name="transport_s11">芦花压榨花生油\n1升</string>
+    <string name="transport_s11">鲁花压榨花生油\n1升</string>
     <string name="transport_s12">￥39元</string>
     <string name="transport_s13">大米\n1袋</string>
     <string name="transport_s14">￥39元</string>
+    <!-- 亲人 -->
+    <string name="family_title">亲人</string>
 
     <string name="hello_first_fragment">您好，今天您想做什么？</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
