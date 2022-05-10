@@ -66,22 +66,22 @@ class EmergencyFragment : Fragment() {
 
         binding.buttonEmergency120.setOnClickListener {
             // check permission, if granted, call emergency number, if not, request permission and call emergency number
-            makeCall("10000")
+            makeCall("911")
 //            makeCall("120")
         }
 
         binding.buttonEmergency110.setOnClickListener {
-            makeCall("10001")
+            makeCall("911")
 //            makeCall("110")
         }
 
         binding.buttonEmergency119.setOnClickListener {
-            makeCall("10086")
+            makeCall("911")
 //            makeCall("119")
         }
 
         binding.buttonEmergency112.setOnClickListener {
-            makeCall("10010")
+            makeCall("911")
 //            makeCall("112")
         }
 
